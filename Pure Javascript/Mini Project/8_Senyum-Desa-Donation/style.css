@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3.4rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #4a4a4a;
+  background: white;
+}
+
+.card-wrapper {
+  min-height: 50vh;
+}
+
+.card-wrapper img {
+  width: 100%;
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.content-wrapper progress {
+  margin: 3rem 0;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.content-wrapper button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: none;
+  padding: 1rem 0;
+  background: #da336b;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.donation-status {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/*# sourceMappingURL=style.css.map */

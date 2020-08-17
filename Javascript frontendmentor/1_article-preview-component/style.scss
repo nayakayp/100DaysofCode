@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  //   background: hsl(217, 19%, 35%);
+  //   background: hsl(214, 17%, 51%);
+  //   background: hsl(212, 23%, 69%);
+  background: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  align-items: center;
+}
+h1,
+h2 {
+  color: hsl(217, 19%, 35%);
+}
+h1 {
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(212, 23%, 69%);
+}
+p {
+  color: hsl(214, 17%, 51%);
+  font-size: 1.2rem;
+}
+.article-wrapper {
+  margin: 0 auto;
+  background: white;
+  width: 85%;
+  border-radius: 7px;
+}
+.img-header {
+  object-fit: cover;
+  height: 25vh;
+  border-radius: 7px 7px 0 0;
+  width: 100%;
+}
+.content-wrapper {
+  padding: 3rem;
+  h1 {
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+}
+
+.share-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-radius: 0 0 7px 7px;
+  position: relative;
+  .share-button {
+    width: 4rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+.first {
+  .img-avatar {
+    width: 14%;
+    border-radius: 50%;
+    margin-right: 1.3rem;
+  }
+  .avatar-info {
+    margin-right: 6.5rem;
+  }
+  .share-button {
+    color: hsl(212, 23%, 69%);
+    background: hsl(210, 46%, 95%);
+  }
+}
+.second {
+  display: none;
+  background: hsl(217, 19%, 35%);
+  h1 {
+    color: white;
+    font-weight: 100;
+  }
+  .social-icon {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .share-button {
+    background: hsl(214, 17%, 51%);
+    color: hsl(210, 46%, 95%);
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 2.55rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: hsl(212, 23%, 69%);
+  }
+  .article-wrapper {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  .img-header {
+    min-height: 50vh;
+  }
+  .second {
+    position: absolute;
+  }
+}

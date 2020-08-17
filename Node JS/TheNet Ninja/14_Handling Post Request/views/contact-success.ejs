@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background: skyblue;
+        font-family: sans-serif;
+        color: #fff;
+        padding: 3rem;
+      }
+      h1 {
+        font-size: 4.7rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+      p {
+        font-size: 1.6rem;
+        text-align: center;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('partials/nav') %>
+    <h1>Contact Us!</h1>
+    <p>Thanks for getting in touch!</p>
+    <p>You contacted: <%=data.who%> in the <%=data.department%> Departement</p>
+    <p>We will reply you at <%=data.email%></p>
+  </body>
+</html>

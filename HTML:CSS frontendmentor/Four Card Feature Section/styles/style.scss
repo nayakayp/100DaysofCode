@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  //   ###Primary
+
+  //   color: hsl(0, 78%, 62%);
+  //   color: hsl(180, 62%, 55%);
+  //   color: hsl(34, 97%, 64%);
+  //   color: hsl(212, 86%, 64%);
+
+  //   // ### Neutral
+
+  // color: hsl(234, 12%, 34%);
+  // color: hsl(229, 6%, 66%);
+  // color: hsl(0, 0%, 98%);
+}
+body {
+  width: 1440px;
+  font-family: "Poppins", sans-serif;
+  margin: 5rem 0;
+}
+
+.borderTop {
+  margin: 0;
+  padding: 0;
+  height: 3px;
+  border-radius: 10px 10px 0 0;
+}
+.bdrSupervisor {
+  background: hsl(180, 62%, 55%);
+}
+.bdrCalculator {
+  background: hsl(212, 86%, 64%);
+}
+.bdrTeam {
+  background: hsl(0, 78%, 62%);
+}
+.bdrKarma {
+  background: hsl(34, 97%, 64%);
+}
+
+.head-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.head-wrapper h1,
+h2 {
+  font-size: 3.4rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.head-wrapper h1 {
+  font-weight: 200;
+}
+.head-wrapper h2 {
+  font-size: 3.2rem;
+}
+.head-wrapper p {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+// CARD WRAPPER
+.cards-wrapper {
+  position: relative;
+  margin: 5rem 0 0 0;
+  min-height: 90vh;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 2px 2px 70px -21px rgba(76, 78, 97, 0.5);
+}
+.card-text {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-text img {
+  position: absolute;
+  width: 15%;
+  right: 20px;
+  bottom: 20px;
+}
+.card-text h3 {
+  font-size: 1.8rem;
+  color: hsl(234, 12%, 34%);
+}
+.card-text p {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.2rem;
+}
+// horizontal card
+
+.horizontal-card {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.supervisor {
+  margin-left: 5rem;
+}
+.calculator {
+  margin-right: 5rem;
+}
+//vertical card
+.vertical-card {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+}
+.teamBuilder {
+  margin-bottom: 3rem;
+}
+
+footer {
+  min-height: 10vh;
+  text-align: center;
+  font-size: 1.2rem;
+}
+a {
+  color: orange;
+  font-weight: 400;
+  text-decoration: none;
+}

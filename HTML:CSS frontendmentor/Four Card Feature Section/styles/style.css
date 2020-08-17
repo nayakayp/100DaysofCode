@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 1440px;
+  font-family: "Poppins", sans-serif;
+  margin: 5rem 0;
+}
+
+.borderTop {
+  margin: 0;
+  padding: 0;
+  height: 3px;
+  border-radius: 10px 10px 0 0;
+}
+
+.bdrSupervisor {
+  background: #45d3d3;
+}
+
+.bdrCalculator {
+  background: #549ef2;
+}
+
+.bdrTeam {
+  background: #ea5353;
+}
+
+.bdrKarma {
+  background: #fcaf4a;
+}
+
+.head-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.head-wrapper h1,
+h2 {
+  font-size: 3.4rem;
+  color: #4c4e61;
+}
+
+.head-wrapper h1 {
+  font-weight: 200;
+}
+
+.head-wrapper h2 {
+  font-size: 3.2rem;
+}
+
+.head-wrapper p {
+  color: #a3a5ae;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.cards-wrapper {
+  position: relative;
+  margin: 5rem 0 0 0;
+  min-height: 90vh;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 0 0 5px 5px;
+  -webkit-box-shadow: 2px 2px 70px -21px rgba(76, 78, 97, 0.5);
+          box-shadow: 2px 2px 70px -21px rgba(76, 78, 97, 0.5);
+}
+
+.card-text {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-text img {
+  position: absolute;
+  width: 15%;
+  right: 20px;
+  bottom: 20px;
+}
+
+.card-text h3 {
+  font-size: 1.8rem;
+  color: #4c4e61;
+}
+
+.card-text p {
+  color: #a3a5ae;
+  font-size: 1.2rem;
+}
+
+.horizontal-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.supervisor {
+  margin-left: 5rem;
+}
+
+.calculator {
+  margin-right: 5rem;
+}
+
+.vertical-card {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.teamBuilder {
+  margin-bottom: 3rem;
+}
+
+footer {
+  min-height: 10vh;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+a {
+  color: orange;
+  font-weight: 400;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

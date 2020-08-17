@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 90%;
+  min-height: 100vh;
+  margin: 3rem auto;
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+
+  //   ### Primary
+  background: hsl(163, 72%, 41%);
+  background: hsl(356, 69%, 56%);
+
+  background: hsl(208, 92%, 53%);
+  background: hsl(203, 89%, 53%);
+  // - Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
+  background: hsl(348, 97%, 39%);
+
+  //   #### Light Theme
+
+  background: hsl(0, 0%, 100%);
+  background: hsl(225, 100%, 98%);
+  background: hsl(227, 47%, 96%);
+  background: hsl(228, 12%, 44%);
+  background: hsl(230, 17%, 14%);
+  background: #ffffff;
+}
+h1 {
+  font-size: 2.4rem;
+  text-align: left;
+  color: hsl(230, 17%, 14%);
+}
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+  color: hsl(228, 12%, 44%);
+}
+
+.increase,
+.decrease {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.increase {
+  color: hsl(163, 72%, 41%);
+}
+.increase::before {
+  padding: 0 0.5rem 0.5rem 0;
+  content: url("./images/icon-up.svg");
+}
+.decrease {
+  color: hsl(356, 69%, 56%);
+}
+.decrease::before {
+  padding: 0 0.5rem 0.5rem 0;
+  content: url("./images/icon-down.svg");
+}
+header {
+  margin-bottom: 3rem;
+  .title {
+    margin: 0 0 1.5rem 0;
+  }
+  .mode-switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3rem 0;
+    span {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-right: 1rem;
+      color: hsl(228, 12%, 44%);
+    }
+    .toggle-btn {
+      width: 60px;
+      height: 30px;
+      border-radius: 50px;
+      background: hsl(228, 12%, 44%);
+      padding: 5px;
+      cursor: pointer;
+      .inner-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: hsl(0, 0%, 100%);
+      }
+    }
+    .toggle-btn.dark > .inner-circle {
+      margin-left: 30px;
+      background: hsl(230, 17%, 14%);
+    }
+  }
+}
+.statistic-section {
+  .card-effect {
+    padding: 2px 0;
+    border-radius: 5px 5px 0 0;
+  }
+  .eff-fb {
+    background: hsl(208, 92%, 53%);
+  }
+  .eff-tw {
+    background: hsl(203, 89%, 53%);
+  }
+  .eff-ig {
+    background: linear-gradient(
+      90deg,
+      rgba(253, 196, 104, 1) 35%,
+      rgba(223, 73, 150, 1) 100%
+    );
+  }
+  .eff-yt {
+    background: hsl(348, 97%, 39%);
+  }
+  .card-statistic {
+    padding: 3rem 0;
+    border-radius: 0 0 5px 5px;
+    margin: 0 0 2rem 0;
+    background: hsl(227, 47%, 96%);
+  }
+
+  p {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-right: 1rem;
+    }
+  }
+  .username {
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+    margin: 0 0 2rem 0;
+  }
+  .followers {
+    font-size: 5rem;
+    font-weight: 700;
+    color: hsl(230, 17%, 14%);
+  }
+  .followers-subtitle {
+    letter-spacing: 0.5rem;
+    color: hsl(228, 12%, 44%);
+  }
+  .follower-change {
+    margin: 2rem 0 0 0;
+  }
+}
+h3 {
+  text-align: left;
+  margin: 5rem 0 2.5rem 0;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+.overview-section {
+  margin: 5rem 0 0 0;
+
+  .card-overview {
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 0 0 2rem 0;
+    background: hsl(227, 47%, 96%);
+    display: flex;
+    justify-content: space-between;
+
+    .card-title,
+    img {
+      margin: 0 0 3.5rem 0;
+    }
+    .title-wrapper {
+      text-align: left;
+    }
+    .statistic-wrapper {
+      text-align: right;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: hsl(228, 12%, 44%);
+    }
+    .card-counter {
+      font-size: 3rem;
+      font-weight: 700;
+      color: hsl(230, 17%, 14%);
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 75%;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .line {
+    display: none;
+  }
+  .statistic-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .card-wrapper {
+      flex: 0 1 25rem;
+    }
+  }
+  .overview-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .card-overview {
+      flex: 0 1 25rem;
+    }
+  }
+}

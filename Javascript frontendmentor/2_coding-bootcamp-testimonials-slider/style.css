@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: #202046;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+span {
+  font-size: 1.8rem;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.title {
+  font-weight: 300;
+  color: #babacf;
+  display: block;
+}
+
+.testimonial-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.image-slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40vh;
+  background: url("./images/pattern-bg.svg");
+  background-position: center;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.image-slider img {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.button-wrapper {
+  padding: 0.3rem 0;
+  background: white;
+  position: absolute;
+  bottom: 15px;
+  width: 25%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(32, 32, 70, 0.75);
+          box-shadow: 0px 0px 10px 0px rgba(32, 32, 70, 0.75);
+  border-radius: 50px;
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.content-wrapper img {
+  width: 20%;
+  position: relative;
+  z-index: -100;
+  top: 25px;
+}
+
+.pattern-curve {
+  margin-top: 5rem;
+}
+
+.pattern-curve img {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  .testimonial-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .button-wrapper {
+    position: absolute;
+    bottom: 180px;
+    left: 30px;
+    width: 25%;
+    text-align: center;
+  }
+  .pattern-curve {
+    width: 100%;
+  }
+  .image-slider {
+    width: 100%;
+    min-height: 100vh;
+    background: url("./images/pattern-bg.svg");
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+  }
+  .image-slider img {
+    width: 100%;
+  }
+  .content-wrapper {
+    text-align: left;
+  }
+  .content-wrapper img {
+    width: 10%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

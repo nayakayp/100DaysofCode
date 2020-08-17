@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background: skyblue;
+        font-family: sans-serif;
+        color: #fff;
+        padding: 3rem;
+      }
+      h1 {
+        font-size: 4.7rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+      p,
+      li {
+        font-size: 1.6rem;
+        text-align: center;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('partials/nav') %>
+    <h1>Welcome to the profile of <%= person%></h1>
+    <p><strong>Age:</strong> <%=data.age%></p>
+    <p><strong>Job:</strong> <%=data.job%></p>
+    <h2>Hobbbies:</h2>
+    <ul>
+      <%data.hobbies.forEach(function(item){%>
+      <li><%=item%></li>
+      <%});%>
+    </ul>
+  </body>
+</html>

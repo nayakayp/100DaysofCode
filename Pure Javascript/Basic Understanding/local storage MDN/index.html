@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>Table with Bootstrap 5</title>
+  </head>
+  <body>
+    <form>
+      <div class="form-group col-3 mt-3">
+        <label for="inputPhoto">Foto</label>
+        <input type="text" class="form-control" id="inputPhoto" />
+      </div>
+      <div class="form-group col-3 mt-3">
+        <label for="inputFullName">Full Name</label>
+        <input type="text" class="form-control" id="inputFullName" />
+      </div>
+      <div class="form-group col-3 mt-3">
+        <label for="inputEmail">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="form-group col-3 mt-3">
+        <label for="inputNRP">NRP</label>
+        <input type="text" class="form-control" id="inputNRP" />
+      </div>
+      <label class="ml-3">Jurusan</label>
+      <select class="form-control col-2 ml-3 mb-3" id="formControlSelect">
+        <option>Teknik Telekomunikasi</option>
+        <option>Teknik Informatika</option>
+        <option>Teknik Elektronika</option>
+        <option>Teknik Mekatronika</option>
+        <option>Teknik Komputer</option>
+      </select>
+      <button type="submit" class="btn btn-primary ml-3 mt-3 mb-3">
+        Submit
+      </button>
+    </form>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Foto</th>
+          <th scope="col">Nama Mahasiswa</th>
+          <th scope="col">Email</th>
+          <th scope="col">NRP</th>
+          <th scope="col">Jurusan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>nayaka.jpg</td>
+          <td>Nayaka Yoga Pradipta</td>
+          <td>nayakayp@gmail.com</td>
+          <td>1110151022</td>
+          <td>Teknik Elektronika</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="./index-start.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndexedDB</title>
+    <style>
+      .btn {
+        padding: 0.5em 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" class="btn">Add Data</button>
+
+    <script>
+      (() => {
+        if ("indexedDb" in window) {
+          console.log("Your browser not supported indexedDB");
+          return;
+        }
+        // IndexedDB goes here...
+        let btn = document.querySelector(".btn");
+        btn.addEventListener("click", AddData);
+      })();
+
+      function AddData() {
+        const dbname = "MyDB";
+        const requestDB = window.indexedDB.open(dbname);
+
+        requestDB.onupgradeneeded = () => {
+          let db = requestDB.result;
+          let store = db.createObjectStore("book", { autoIncrement: true });
+
+          // put method
+          store.put({ title: "Daily Tuituion", author: "Akashay" });
+          store.put({ title: "press", author: "like button" });
+          store.put({ title: "press", author: "like josh", kota: "Surabaya" });
+        };
+        requestDB.onsuccess = () => {
+          if (requestDB.readyState == "done") {
+            console.log(
+              "Data is Successfully Inserted into indexedDB database!"
+            );
+          }
+        };
+      }
+    </script>
+  </body>
+</html> -->

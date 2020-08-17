@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //   color: hsl(179, 62%, 43%);
+  //   color: hsl(71, 73%, 54%);
+
+  //   color: hsl(204, 43%, 93%);
+  //   color: hsl(218, 22%, 67%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  background: hsl(204, 43%, 93%);
+  //   min-height: 100vh;
+}
+
+.body-wrapper {
+  width: 50%;
+  background: white;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+  margin-top: 7rem;
+}
+.hero {
+  padding: 3rem;
+}
+.hero h1 {
+  margin-bottom: 2rem;
+  color: hsl(179, 62%, 43%);
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.hero p {
+  margin: 1rem 0;
+  color: hsl(218, 22%, 67%);
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+.exp-wrapper {
+  display: flex;
+}
+.subscription {
+  width: 50%;
+  padding: 3rem;
+  background: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  border-radius: 0 0 0 0.5rem;
+}
+.subscription h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.subscription p {
+  margin: 1.5rem 0;
+}
+span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+button {
+  width: 80%;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  background: hsl(71, 73%, 54%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.5rem 3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.benefits {
+  width: 50%;
+  padding: 3rem;
+  background: hsl(179, 62%, 45%);
+  color: hsl(204, 43%, 93%);
+  border-radius: 0 0 0.5rem 0;
+}
+.benefits h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.benefits ul {
+  margin: 1.5rem 0;
+}
+li {
+  list-style: none;
+  opacity: 0.6;
+  line-height: 2.3rem;
+}

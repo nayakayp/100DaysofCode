@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+  background: #b3b5c6;
+  background: #6d708d;
+  background: #494c5f;
+  background: #f6f6fe;
+}
+
+.line {
+  height: 1px;
+  background: #b3b5c6;
+}
+
+.pattern-bottom {
+  display: none;
+}
+
+.pattern-top {
+  position: absolute;
+  top: -25px;
+  right: -50%;
+  z-index: -1;
+}
+
+.container header {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.container header h1 {
+  font-size: 3.6rem;
+  color: #6d708d;
+}
+
+.container header .switch-wrapper {
+  margin: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header .switch-wrapper span {
+  font-size: 1.4rem;
+  color: #b3b5c6;
+}
+
+.container header .switch-wrapper .btn-switch {
+  cursor: pointer;
+  margin: 0 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+  height: 30px;
+  width: 55px;
+  border-radius: 50px;
+  padding: 2.5px 3px;
+}
+
+.container header .switch-wrapper .btn-switch .inner-circle {
+  background: #ffffff;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+}
+
+.container header .switch-wrapper .btn-switch .active {
+  margin-left: 50%;
+}
+
+.price-section {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.price-section .price-card {
+  width: 100%;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #494c5f;
+  margin: 2rem 0;
+  padding: 3rem;
+}
+
+.price-section .price-card h3 {
+  font-size: 1.6rem;
+  color: #6d708d;
+}
+
+.price-section .price-card h2 {
+  margin: 3rem 0;
+  font-size: 7rem;
+}
+
+.price-section .price-card h2:before {
+  content: "$";
+  font-size: 4rem;
+  vertical-align: middle;
+}
+
+.price-section .price-card p {
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+  color: #6d708d;
+}
+
+.price-section .price-card .btn {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+  cursor: pointer;
+}
+
+.price-section .price-card .btn:hover {
+  border: solid 0.1px #696fdd;
+  background: none;
+  color: #696fdd;
+}
+
+.price-section .highlight {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+}
+
+.price-section .highlight .btn {
+  background: #ffffff;
+  color: #696fdd;
+}
+
+.price-section .highlight .btn:hover {
+  border: solid 0.1px #ffffff;
+  background: none;
+  color: #ffffff;
+}
+
+.price-section .highlight .line {
+  background: #a3a8f0;
+}
+
+.price-section .highlight h2,
+.price-section .highlight h3,
+.price-section .highlight p {
+  color: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pattern-bottom {
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    z-index: -1;
+  }
+  .pattern-top {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+  }
+  .price-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-card {
+    width: 100%;
+  }
+  .price-section .highlight {
+    padding: 4rem 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

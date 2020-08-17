@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Social Media Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Social Media Dashboard</h1>
+        <h2>Total Followers: 23,004</h2>
+        <div
+          class="line"
+          style="
+            margin: 2rem 0 0 0;
+            padding: 0.5px 0;
+            background: hsl(230, 17%, 14%);
+          "
+        ></div>
+      </div>
+      <div class="mode-switcher">
+        <span>Light Mode</span>
+        <div class="toggle-btn">
+          <div class="inner-circle"></div>
+        </div>
+      </div>
+    </header>
+    <div class="statistic-section">
+      <div class="card-wrapper">
+        <div class="card-effect eff-fb"></div>
+        <div class="card-statistic fb">
+          <p class="username">
+            <img src="./images/icon-facebook.svg" alt="" /> @nathanf
+          </p>
+          <p class="followers">1987</p>
+          <p class="followers-subtitle">FOLLOWERS</p>
+          <p class="follower-change increase">
+            <i class="increase-icon"></i>12 Today
+          </p>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div class="card-effect eff-tw"></div>
+        <div class="card-statistic tw">
+          <p class="username">
+            <img src="./images/icon-twitter.svg" alt="" /> @nathanf
+          </p>
+          <p class="followers">1044</p>
+          <p class="followers-subtitle">FOLLOWERS</p>
+          <p class="follower-change increase">
+            <i class="increase-icon"></i>99 Today
+          </p>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div class="card-effect eff-ig"></div>
+        <div class="card-statistic ig">
+          <p class="username">
+            <img src="./images/icon-instagram.svg" alt="" /> @realnathanf
+          </p>
+          <p class="followers">11k</p>
+          <p class="followers-subtitle">FOLLOWERS</p>
+          <p class="follower-change increase">
+            <i class="increase-icon"></i>1099 Today
+          </p>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div class="card-effect eff-yt"></div>
+        <div class="card-statistic yt">
+          <p class="username">
+            <img src="./images/icon-youtube.svg" alt="" /> Nathan F.
+          </p>
+          <p class="followers">8239</p>
+          <p class="followers-subtitle">SUBSCRIBERS</p>
+          <p class="follower-change decrease">144 Today</p>
+        </div>
+      </div>
+    </div>
+    <h3>Overview - Today</h3>
+    <div class="overview-section">
+      <div class="card-overview fb-views">
+        <div class="title-wrapper">
+          <p class="card-title">Page Views</p>
+          <p class="card-counter">87</p>
+        </div>
+        <div class="statistic-wrapper">
+          <img src="./images/icon-facebook.svg" alt="" />
+          <p class="increase">3%</p>
+        </div>
+      </div>
+      <div class="card-overview fb-likes">
+        <div class="title-wrapper">
+          <p class="card-title">Likes</p>
+          <p class="card-counter">52</p>
+        </div>
+        <div class="statistic-wrapper">
+          <img src="./images/icon-facebook.svg" alt="" />
+          <p class="decrease">2%</p>
+        </div>
+      </div>
+      <div class="card-overview ig-likes">
+        <div class="title-wrapper">
+          <p class="card-title">Likes</p>
+          <p class="card-counter">5462</p>
+        </div>
+        <div class="statistic-wrapper">
+          <img src="./images/icon-instagram.svg" alt="" />
+          <p class="increase">2257%</p>
+        </div>
+      </div>
+      <div class="card-overview ig-views">
+        <div class="title-wrapper">
+          <p class="card-title">Profile Views</p>
+          <p class="card-counter">52k</p>
+        </div>
+        <div class="statistic-wrapper">
+          <img src="./images/icon-instagram.svg" alt="" />
+          <p class="increase">1375%</p>
+        </div>
+      </div>
+      <div class="card-overview tw-retweets">
+        <div class="title-wrapper">
+          <p class="card-title">Retweets</p>
+          <p class="card-counter">117</p>
+        </div>
+        <div class="statistic-wrapper">
+          <img src="./images/icon-twitter.svg" alt="" />
+          <p class="increase">303%</p>
+        </div>
+      </div>
+      <div class="card-overview tw-likes">
+        <div class="title-wrapper">
+          <p class="card-title">Likes</p>
+          <p class="card-counter">507</p>
+        </div>
+        <div class="statistic-wrapper">
+          <img src="./images/icon-twitter.svg" alt="" />
+          <p class="increase">553%</p>
+        </div>
+      </div>
+      <div class="card-overview yt-likes">
+        <div class="title-wrapper">
+          <p class="card-title">Likes</p>
+          <p class="card-counter">107</p>
+        </div>
+        <div class="statistic-wrapper">
+          <img src="./images/icon-youtube.svg" alt="" />
+          <p class="decrease">19%</p>
+        </div>
+      </div>
+      <div class="card-overview yt-views">
+        <div class="title-wrapper">
+          <p class="card-title">Total Views</p>
+          <p class="card-counter">1407</p>
+        </div>
+        <div class="statistic-wrapper">
+          <img src="./images/icon-youtube.svg" alt="" />
+          <p class="decrease">12%</p>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

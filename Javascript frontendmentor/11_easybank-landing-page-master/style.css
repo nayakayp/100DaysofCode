@@ -1,0 +1,95 @@
+:root {
+  --DarkBlue: hsl(233, 26%, 24%);
+  --LimeGreen: hsl(136, 65%, 51%);
+  --BrightCyan: hsl(192, 70%, 51%);
+  --GrayishBlue: hsl(233, 8%, 62%);
+  --LightGrayishBlue: hsl(220, 16%, 96%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --FontLight: 300;
+  --FontMedium: 400;
+  --FontBold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: calc(1.8rem + 0.5vmin);
+  font-family: "Public Sans", sans-serif;
+}
+
+.btn-cta {
+  border: none;
+  border-radius: 50px;
+  color: var(--White);
+  padding: 1rem 2.5rem;
+  font-size: calc(1rem + 0.5vmin);
+  background: linear-gradient(40deg, #3eda82 7%, #378fe6 100%);
+  cursor: pointer;
+}
+
+header {
+  width: 85%;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+header nav {
+  position: relative;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+header nav ul a {
+  font-size: calc(1rem + 0.75vmin);
+  font-weight: var(--FontLight);
+  color: var(--GrayishBlue);
+  text-decoration: none;
+}
+
+.hero-section {
+  min-height: 90vh;
+  background: url("./images/bg-intro-desktop.svg"), var(--LightGrayishBlue);
+  background-position: 350% 70%;
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section .mockup-desktop {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  z-index: 0;
+  width: 50%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
