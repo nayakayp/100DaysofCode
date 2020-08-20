@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      type="text/javascript"
+      src="https://app.midtrans.com/snap/snap.js"
+      data-client-key="Mid-client-wlknBTA2aVnspQew"
+    ></script>
+  </head>
+
+  <body>
+    <p id="token"><%=token%></p>
+    <button id="pay-button">Pay!</button>
+    <script type="text/javascript">
+      const payButton = document.getElementById("pay-button");
+      const snapToken = document.getElementById("token").value;
+      payButton.addEventListener("click", function () {
+        snap.pay(snapToken);
+      });
+    </script>
+  </body>
+</html>
