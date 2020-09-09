@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>Create Quote</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="/<%= quote._id %>/update"
+        method="post"
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <a href="/" class="btn btn-secondary">Back</a>
+        <span class="title h1 text-center">Edit quote</span>
+        <label for="name">
+          Name:
+          <input type="text" name="name" value="<%= quote.name %>" id="name" />
+        </label>
+        <label for="quote">
+          Quote:
+          <input
+            type="text"
+            name="quote"
+            value="<%= quote.quote %>"
+            id="quote"
+          />
+        </label>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+    </div>
+  </body>
+</html>

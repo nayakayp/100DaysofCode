@@ -1,0 +1,31 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 50vh;
+  overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+span.title {
+  vertical-align: middle;
+}
+/*# sourceMappingURL=style.css.map */
