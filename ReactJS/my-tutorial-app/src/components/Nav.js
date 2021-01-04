@@ -1,12 +1,11 @@
 import React from "react";
 
-const Nav=()=>(
+const Nav = () => {
+  return (
     <nav>
-        <li><a>Home</a></li>
-        <li><a>Notifications</a></li>
-        <li><a>Analytics</a></li>
-        <li><a>Tweets</a></li>
+      <h1>Nav</h1>
     </nav>
-);
+  );
+};
 
 export default Nav;
